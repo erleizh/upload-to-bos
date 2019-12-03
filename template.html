@@ -1,0 +1,30 @@
+<html>
+<style type="text/css">
+    #wrap {
+        display: flex;
+   }
+
+    #row {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+   }
+</style>
+<div id="row">
+    <div> <a href="${BUILD_HISTORY}"> <img src="${QRCODE_URL}" width="600"/> </a> </div>
+    <div>
+        <ul>
+            <li>域&ensp;&ensp;&ensp;&ensp;名 : ${SERVER_HOST}</li>
+            <li>分&ensp;支&ensp;名 : ${BRANCH}</li>
+            <li>渠&ensp;道&ensp;名 : ${CHANNEL_NAME}</li>
+            <li>版&ensp;本&ensp;名 : ${VERSION_NAME}</li>
+            <li>版&ensp;本&ensp;号 : ${VERSION_CODE}</li>
+            <li>编译类型 : ${BUILD_TYPE}</li>
+            <li>打包时间 : ${BUILD_TIMESTAMP}</li>
+            <li>更新说明:<pre>${CHANGE_LOG}</pre></li>
+            <li>文件列表:  ${FILE_LIST}</li>
+        </ul>
+    </div>
+</div>
+
+</html>
